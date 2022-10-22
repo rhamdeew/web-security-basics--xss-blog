@@ -1,4 +1,4 @@
-<h1>Articles</h1>
+<h1>Super Hack3r blog</h1>
 
 Our blog has <%= Article.public_count %> articles and counting!
 
@@ -7,6 +7,7 @@ Our blog has <%= Article.public_count %> articles and counting!
     <% unless article.archived? %>
       <li>
         <%= link_to article.title, article %>
+        <%= article.updated_at %>
       </li>
     <% end %>
   <% end %>
