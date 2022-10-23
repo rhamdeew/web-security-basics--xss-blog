@@ -1,6 +1,13 @@
-### Description:
+### Description
 
 This is an example of blog created from this guide: https://guides.rubyonrails.org/getting_started.html
+
+
+### Setup database
+
+```
+bin/rails db:setup
+```
 
 ### How to add a vulnerability
 
