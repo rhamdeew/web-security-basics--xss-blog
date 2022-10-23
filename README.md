@@ -1,12 +1,22 @@
+### Description:
+
+This is an example of blog created from this guide: https://guides.rubyonrails.org/getting_started.html
+
+### How to add a vulnerability
+
+You need to open `app/views/comments/_comment.html.erb` and change
+
+```
+      <%= comment.body %>
+```
+
+to
+
+```
+      <%= comment.body.html_safe %>
+```
+
 ### XSS Examples:
-
-**Well formatted comment**
-
-```
-<h1>Well formatted comment</h1>
-<p>Lorem ipsum<p>
-<p>Lorem ipsum<p>
-```
 
 **Comment with an iframe**
 
